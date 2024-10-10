@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Hangman Game</h1>
+        <canvas id="hangmanCanvas" width="200" height="250"></canvas>
+        <p id="hintDisplay">Hint: ???</p> <!-- Agregado para mostrar la pista -->
+        <p id="wordDisplay">_ _ _ _ _</p>
+        <p>Wrong guesses: <span id="wrongGuesses"></span></p>
+        <div id="keyboard"></div>
+        <button id="resetButton">Restart Game</button>
+        <audio id="correctSound" src="correct.mp3"></audio>
+        <audio id="wrongSound" src="wrong.mp3"></audio>
+        <audio id="winSound" src="win.mp3"></audio> <!-- Nuevo sonido de victoria -->
+        <div id="confettiContainer"></div> <!-- Contenedor para la animación de confeti -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
